@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unser Sortiment - EisdeBona</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2 class="eisdebona-logo"><a href="index.html"><span aria-label="ice cream" role="img">🍦</span> EisdeBona</a></h2>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link" data-de="Startseite" data-en="Home">Startseite</a></li>
+        <li><a href="catalog.html" class="nav-link active" data-de="Unser Sortiment" data-en="Flavors">Unser Sortiment</a></li>
+        <li><a href="merchandise.html" class="nav-link" data-de="Merchandise" data-en="Merchandise">Merchandise</a></li>
+        <li><a href="contact.html" class="nav-link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+      <div class="language-toggle">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1 data-de="Unser Sortiment" data-en="Our Flavors">Unser Sortiment</h1>
+      <p data-de="Entdecke unsere handgemachten Eissorten – täglich frisch zubereitet" data-en="Discover our handcrafted ice cream flavors – freshly made daily">
+        Entdecke unsere handgemachten Eissorten – täglich frisch zubereitet
+      </p>
+    </div>
+  </section>
+
+  <!-- Catalog Grid -->
+  <section class="catalog-section">
+    <div class="container">
+      <div class="catalog-grid">
+        <!-- Strawberry -->
+        <div class="catalog-item" onclick="openModal('strawberry')">
+          <div class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Strawberry Ice Cream" />
+          </div>
+          <div class="catalog-info">
+            <h3 data-de="Erdbeere" data-en="Strawberry">Erdbeere</h3>
+            <p data-de="Fruchtig und erfrischend mit echten Erdbeerstücken" data-en="Fruity and refreshing with real strawberry pieces">
+              Fruchtig und erfrischend mit echten Erdbeerstücken
+            </p>
+          </div>
+        </div>
+
+        <!-- Chocolate -->
+        <div class="catalog-item" onclick="openModal('chocolate')">
+          <div class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chocolate Ice Cream" />
+          </div>
+          <div class="catalog-info">
+            <h3 data-de="Schokolade" data-en="Chocolate">Schokolade</h3>
+            <p data-de="Cremig und reichhaltig mit belgischer Schokolade" data-en="Creamy and rich with Belgian chocolate">
+              Cremig und reichhaltig mit belgischer Schokolade
+            </p>
+          </div>
+        </div>
+
+        <!-- Vanilla -->
+        <div class="catalog-item" onclick="openModal('vanilla')">
+          <div class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vanilla Ice Cream" />
+          </div>
+          <div class="catalog-info">
+            <h3 data-de="Vanille" data-en="Vanilla">Vanille</h3>
+            <p data-de="Klassisch cremig mit echter Bourbon-Vanille" data-en="Classic creamy with real Bourbon vanilla">
+              Klassisch cremig mit echter Bourbon-Vanille
+            </p>
+          </div>
+        </div>
+
+        <!-- Pistachio -->
+        <div class="catalog-item" onclick="openModal('pistachio')">
+          <div class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Pistachio Ice Cream" />
+          </div>
+          <div class="catalog-info">
+            <h3 data-de="Pistazie" data-en="Pistachio">Pistazie</h3>
+            <p data-de="Nussig und aromatisch mit sizilianischen Pistazien" data-en="Nutty and aromatic with Sicilian pistachios">
+              Nussig und aromatisch mit sizilianischen Pistazien
+            </p>
+          </div>
+        </div>
+
+        <!-- Mango -->
+        <div class="catalog-item" onclick="openModal('mango')">
+          <div class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mango Ice Cream" />
+          </div>
+          <div class="catalog-info">
+            <h3 data-de="Mango" data-en="Mango">Mango</h3>
+            <p data-de="Tropisch süß mit reifen Mangos" data-en="Tropically sweet with ripe mangoes">
+              Tropisch süß mit reifen Mangos
+            </p>
+          </div>
+        </div>
+
+        <!-- Mint Chocolate Chip -->
+        <div class="catalog-item" onclick="openModal('mint')">
+          <div class="catalog-image">
+            <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mint Chocolate Chip Ice Cream" />
+          </div>
+          <div class="catalog-info">
+            <h3 data-de="Minze-Schokolade" data-en="Mint Chocolate Chip">Minze-Schokolade</h3>
+            <p data-de="Erfrischende Minze mit dunklen Schokoladenstückchen" data-en="Refreshing mint with dark chocolate chips">
+              Erfrischende Minze mit dunklen Schokoladenstückchen
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal for flavor details -->
+  <div id="flavorModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modalBody">
+        <!-- Content will be populated by JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EisdeBona</h3>
+          <p data-de="Handgemachtes Eis seit 2025" data-en="Handcrafted ice cream since 2025">
+            Handgemachtes Eis seit 2025<br>
+            <span style="font-size:0.95em; color:#b96fa2;">Eis, Kaffee &amp; süße Momente im Herzen von 59065</span>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4 data-de="Kontakt" data-en="Contact">Kontakt</h4>
+          <p>Caldenholer Weg 26<br>59065</p>
+          <p>Tel: 0281-24568</p>
+          <p>Fax: 02381-375700</p>
+          <p>info@eisdebona.de</p>
+        </div>
+        <div class="footer-section">
+          <h4 data-de="Öffnungszeiten" data-en="Opening Hours">Öffnungszeiten</h4>
+          <p data-de="Mo-So: 11:00 - 21:00" data-en="Mon-Sun: 11:00 AM - 9:00 PM">Mo-So: 11:00 - 21:00</p>
+          <p data-de="Feiertage: abweichend" data-en="Holidays: different">Feiertage: abweichend</p>
+        </div>
+        <div class="footer-section">
+          <h4 data-de="Folge uns" data-en="Follow Us">Folge uns</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘 Facebook</a>
+            <a href="#" aria-label="Instagram">📷 Instagram</a>
+            <a href="#" aria-label="Twitter">🐦 Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EisdeBona. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
+        <p style="font-size:0.95em; color:#b96fa2;">Designed and developed by Ham Kemboi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EisdeBona - Handgemachtes Eis in Deutschland</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <h2 class="eisdebona-logo"><a href="index.html"><span aria-label="ice cream" role="img">🍦</span> EisdeBona</a></h2>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link active" data-de="Startseite" data-en="Home">Startseite</a></li>
+        <li><a href="catalog.html" class="nav-link" data-de="Unser Sortiment" data-en="Flavors">Unser Sortiment</a></li>
+        <li><a href="merchandise.html" class="nav-link" data-de="Merchandise" data-en="Merchandise">Merchandise</a></li>
+        <li><a href="contact.html" class="nav-link" data-de="Kontakt" data-en="Contact">Kontakt</a></li>
+      </ul>
+      <div class="language-toggle">
+        <button class="lang-btn active" data-lang="de">DE</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title" data-de="EisdeBona – Handgemachtes Eis in Deutschland" data-en="EisdeBona – Handcrafted Ice Cream in Germany">
+        EisdeBona – Handgemachtes Eis in Deutschland
+      </h1>
+      <p class="hero-subtitle" data-de="Entdecke unsere beliebten Sorten – von fruchtig bis schokoladig!" data-en="Discover our popular flavors – from fruity to chocolatey!">
+        Entdecke unsere beliebten Sorten – von fruchtig bis schokoladig!
+      </p>
+      <div class="hero-buttons">
+        <a href="catalog.html" class="btn btn-primary" data-de="Unser Sortiment" data-en="View Flavors">Unser Sortiment</a>
+        <a href="contact.html" class="btn btn-secondary" data-de="Besuche uns" data-en="Visit Us">Besuche uns</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Delicious ice cream" />
+    </div>
+  </section>
+
+  <!-- Discount Banner -->
+  <section class="discount-banner">
+    <div class="container">
+      <div class="discount-content">
+        <h3 data-de="🍦 Sommeraktion: 10% Rabatt auf alle Sorten!" data-en="🍦 Summer Special: 10% off all flavors!">
+          🍦 Sommeraktion: 10% Rabatt auf alle Sorten!
+        </h3>
+        <p data-de="Gültig bis Ende August" data-en="Valid until end of August">Gültig bis Ende August</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Flavors -->
+  <section class="featured-flavors">
+    <div class="container">
+      <h2 class="section-title" data-de="Unsere beliebtesten Sorten" data-en="Our Most Popular Flavors">
+        Unsere beliebtesten Sorten
+      </h2>
+      <div class="flavors-grid">
+        <div class="flavor-card">
+          <div class="flavor-image">
+            <img src="https://images.unsplash.com/photo-1567206563064-6f60f40a2b57?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Strawberry Ice Cream" />
+          </div>
+          <div class="flavor-info">
+            <h3 data-de="Erdbeere" data-en="Strawberry">Erdbeere</h3>
+            <p data-de="Fruchtig und erfrischend mit echten Erdbeerstücken" data-en="Fruity and refreshing with real strawberry pieces">
+              Fruchtig und erfrischend mit echten Erdbeerstücken
+            </p>
+          </div>
+        </div>
+        
+        <div class="flavor-card">
+          <div class="flavor-image">
+            <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Chocolate Ice Cream" />
+          </div>
+          <div class="flavor-info">
+            <h3 data-de="Schokolade" data-en="Chocolate">Schokolade</h3>
+            <p data-de="Cremig und reichhaltig mit belgischer Schokolade" data-en="Creamy and rich with Belgian chocolate">
+              Cremig und reichhaltig mit belgischer Schokolade
+            </p>
+          </div>
+        </div>
+        
+        <div class="flavor-card">
+          <div class="flavor-image">
+            <img src="https://images.unsplash.com/photo-1488900128323-21503983a07e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Vanilla Ice Cream" />
+          </div>
+          <div class="flavor-info">
+            <h3 data-de="Vanille" data-en="Vanilla">Vanille</h3>
+            <p data-de="Klassisch cremig mit echter Bourbon-Vanille" data-en="Classic creamy with real Bourbon vanilla">
+              Klassisch cremig mit echter Bourbon-Vanille
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="text-center">
+        <a href="catalog.html" class="btn btn-primary" data-de="Alle Sorten entdecken" data-en="Discover All Flavors">
+          Alle Sorten entdecken
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <div class="container">
+      <div class="about-content">
+        <div class="about-text">
+          <h2 data-de="Handgemacht mit Liebe" data-en="Handcrafted with Love">Handgemacht mit Liebe</h2>
+          <p data-de="Seit über 20 Jahren stellen wir in unserer Manufaktur täglich frisches Eis her. Nur die besten Zutaten und traditionelle Rezepte kommen bei uns zum Einsatz." data-en="For over 20 years, we have been making fresh ice cream daily in our manufactory. We only use the finest ingredients and traditional recipes.">
+            Seit über 20 Jahren stellen wir in unserer Manufaktur täglich frisches Eis her. Nur die besten Zutaten und traditionelle Rezepte kommen bei uns zum Einsatz.
+          </p>
+          <a href="contact.html" class="btn btn-secondary" data-de="Besuche unsere Eisdiele" data-en="Visit Our Ice Cream Shop">
+            Besuche unsere Eisdiele
+          </a>
+        </div>
+        <div class="about-image">
+          <img src="https://images.unsplash.com/photo-1497034825429-c343d7c6a68f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Ice cream making process" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>EisdeBona</h3>
+          <p data-de="Handgemachtes Eis seit 2025" data-en="Handcrafted ice cream since 2025">
+            Handgemachtes Eis seit 2025<br>
+            <span style="font-size:0.95em; color:#b96fa2;">Eis, Kaffee &amp; süße Momente im Herzen von 59065</span>
+          </p>
+        </div>
+        <div class="footer-section">
+          <h4 data-de="Kontakt" data-en="Contact">Kontakt</h4>
+          <p>Caldenholer Weg 26<br>59065</p>
+          <p>Tel: 0281-24568</p>
+          <p>Fax: 02381-375700</p>
+          <p>info@eisdebona.de</p>
+        </div>
+        <div class="footer-section">
+          <h4 data-de="Öffnungszeiten" data-en="Opening Hours">Öffnungszeiten</h4>
+          <p data-de="Mo-So: 11:00 - 21:00" data-en="Mon-Sun: 11:00 AM - 9:00 PM">Mo-So: 11:00 - 21:00</p>
+          <p data-de="Feiertage: abweichend" data-en="Holidays: different">Feiertage: abweichend</p>
+        </div>
+        <div class="footer-section">
+          <h4 data-de="Folge uns" data-en="Follow Us">Folge uns</h4>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘 Facebook</a>
+            <a href="#" aria-label="Instagram">📷 Instagram</a>
+            <a href="#" aria-label="Twitter">🐦 Twitter</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 EisdeBona. <span data-de="Alle Rechte vorbehalten." data-en="All rights reserved.">Alle Rechte vorbehalten.</span></p>
+        <p style="font-size:0.95em; color:#b96fa2;">Designed and developed by Ham Kemboi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
